@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import Angels from "./components/Angels";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
@@ -12,6 +12,16 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 function App() {
   const [showPopup, setShowPopup] = useState(true);
   const [showComponents, setShowComponents] = useState(false);
+  const [showStatistics, setShowStatistics] = useState(false);
+
+  useEffect(() => {
+    // Set a timeout to show the Statistics component after 2-3 seconds
+    const timeout = setTimeout(() => {
+      setShowStatistics(true);
+    }, 2000); // Change this timeout value according to your needs (in milliseconds)
+
+    return () => clearTimeout(timeout); // Clear the timeout on unmount
+  }, []);
 
   const handleClosePopup = () => {
     setShowPopup(false);
@@ -34,7 +44,7 @@ function App() {
       {showComponents && (
         <>
           <Herocomponent />
-          <Statistics />
+          {showStatistics && <Statistics />}
           <Programs />
           <Testimonials />
           <Features />
