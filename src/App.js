@@ -45,13 +45,14 @@ function App() {
         <>
           <Herocomponent />
           {showStatistics && <Statistics />}
-          <Programs />
-          <Testimonials />
-          <Features />
-          <TickerTape />
-          <Angels />
-          <Partners />
-          <Footer />
+          {showStatistics && <Programs />}
+          {showStatistics && <Testimonials />}
+          {showStatistics && <Features />}
+          {showStatistics && <TickerTape />}
+          {showStatistics && <Angels />}
+          {showStatistics && <Partners />}
+          {showStatistics && <Footer />}
+          
         </>
       )}
     </div>
