@@ -22,12 +22,12 @@ const Navbar = () => {
                         <span className="text-black font-semibold text-3xl">Buidl.so</span>
                     </div>
                     <div className="hidden md:flex space-x-4">
-                        <button className="text-black font-light text-sm">Chapters</button>
-                        <button className="text-black font-light text-sm">Ecosystem</button>
-                        <button className="text-black font-light text-sm">Investors</button>
-                        <button className="text-black font-light text-sm">Login</button>
-                        <button className="text-black font-light text-sm">Register</button>
-                        <button className="text-black font-light text-sm">We are hiring!</button>
+                        <button className="text-black font-light text-sm hover:text-blue-500">Chapters</button>
+                        <button className="text-black font-light text-sm hover:text-blue-500">Ecosystem</button>
+                        <button className="text-black font-light text-sm hover:text-blue-500">Investors</button>
+                        <button className="text-black font-light text-sm hover:text-blue-500">Login</button>
+                        <button className="text-black font-light text-sm hover:text-blue-500">Register</button>
+                        <button className="text-black font-light text-sm hover:text-blue-500">We are hiring!</button>
                     </div>
                     <div className="md:hidden">
                         <button
